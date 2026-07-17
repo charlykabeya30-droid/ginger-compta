@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <meta name="theme-color" content="#FF9800"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+  <meta name="apple-mobile-web-app-title" content="Ginger Compta"/>
+  <title>Ginger Compta</title>
+  <style>
+    html,body,#root{height:100%;margin:0;padding:0;}
+    body{background:#F8F7F4;}
+    #loading{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(165deg,#FFF8F0,#FFE0B2);gap:16px;}
+    .lic{width:80px;height:80px;background:linear-gradient(135deg,#FF9800,#FFB74D);border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:40px;box-shadow:0 8px 32px rgba(255,152,0,.4);}
+    .lit{font-size:16px;font-weight:600;color:#6B7280;font-family:sans-serif;}
+  </style>
+</head>
+<body>
+  <div id="loading"><div class="lic">🫚</div><div class="lit">Chargement...</div></div>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/recharts@2/umd/Recharts.js"></script>
+  <script src="https://unpkg.com/lucide-react@0.383.0/dist/umd/lucide-react.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
